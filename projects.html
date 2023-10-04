@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Our Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-Q7fo3B2NCu9z9l5Fv3N1wvBf5I+TzRt0DBg5W8thzBMwlbhk7ZJ3biD7Kp2PcBPUH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
     <style>
@@ -28,8 +30,9 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">My Website</a>
+        <a class="navbar-brand" href="#">Our Website</a>
 
         <!-- Toggle button for small screens -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -56,9 +59,82 @@
         </div>
     </nav>
 
-    Projects
-
     <!-- code here -->
+
+    <div id="slider">
+        <figure>
+            <div class="card">
+                <h2>1-Smart Bus Using IOT:</h2>
+                <h4><b>"Designing a smart bus system using iot"</b></h4>
+                <em>Description:</em><br />
+                In this project, we designed and implemented a smart bus system using internet of things. This system
+                provides information about the status of the bus, which are uploaded using IOT with an android
+                application
+                in order to save time and effort. We also automated the payment operations with RFID cards for
+                reliability
+                and control of operations.<br />
+                <em>Keywords:</em><br />
+                Internet of things, RFID Card, android application.<br />
+                for more details, click
+                <a href="https://drive.google.com/file/d/1tVrftl9TwBG7WWRTyzvX-ufxron71HKN/view?usp=drive_link">here</a>
+            </div>
+            <div class="card">
+                <h2>2-Ordert Website:</h2>
+                <h4><b>"Solution for restaurant management: food ordering, table reservation and alot more"</b></h4>
+                <em>Description:</em><br />
+                "Ordert" is a user-friendly food ordering app that simplifies the dining experience. With a vast
+                selection of
+                restaurants and cuisines, it offers seamless browsing, customizable orders, and secure payment options.
+                Real-time order tracking ensures customers receive their meals promptly, making dining convenient and
+                enjoyable.<em>Keywords:</em><br />
+                Website, software systems.<br />
+                for more details, click
+                <a href="https://staging.ordert.com/">here</a>
+            </div>
+            <div class="card">
+                <h2>3-Bayer tree implementation:</h2>
+                <h4><b>"Data structure for storing-retrieving data effectively"</b></h4>
+                <em>Description:</em><br />
+                The Bayer Tree, also known as a Binary Patricia Tree, is a compact and efficient data structure used for
+                storing
+                and searching key-value pairs. It optimizes space by merging nodes with a single child, reducing memory
+                overhead. This tree is often employed in networking and routing algorithms due to its streamlined
+                representation
+                and fast lookup capabilities.<br />
+                <em>Keywords:</em><br />
+                Algorithm, data structures.<br />
+                for more details, click
+                <a href="https://github.com/OdayAli2249/bayer-tree-implementation">here</a>
+            </div>
+        </figure>
+
+        <button class="btn-prev" title="_"><i class="fa fa-arrow-left"></i> </button>
+        <button class="btn-next" title="_"><i class="fa fa-arrow-right"></i> </button>
+
+    </div>
+
+
+
+    <script>
+        $(document).ready(function () {
+            var x = 0;
+            // for next slide
+            $('.btn-next').click(function () {
+
+                x = (x <= 100) ? (x + 100) : 0;
+                $('figure').css('left', -x + '%');
+            });
+
+
+            // for prev slide
+            $('.btn-prev').click(function () {
+
+                x = (x >= 100) ? (x - 100) : 200;
+                $('figure').css('left', -x + '%');
+            });
+        });
+    </script>
+
 
     <!-- Include Bootstrap JavaScript (CDN) and jQuery (required for Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

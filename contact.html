@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Our Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-Q7fo3B2NCu9z9l5Fv3N1wvBf5I+TzRt0DBg5W8thzBMwlbhk7ZJ3biD7Kp2PcBPUH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 
     <style>
         .navbar {
@@ -27,9 +27,9 @@
     </style>
 </head>
 
-<body>
+<body id="bdy">
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">My Website</a>
+        <a class="navbar-brand" href="#">Our Website</a>
 
         <!-- Toggle button for small screens -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -56,10 +56,24 @@
         </div>
     </nav>
 
-    Contact
 
     <!-- code here -->
-
+    <div class="contact-us-card">
+        <form class="contact-us-form" action="https://formsubmit.co/aya.hammora@gmail.com" method="post" id="frm">
+            <h1><b>CONTACT US</b></h1>
+            <p>
+                Your name:<br /><input type="text" name="your_name" placeholder="you name" />
+            </p>
+            <p>
+                Email address:<br /><input type="email" name="email_address" placeholder="you email" required />
+            </p>
+            <p>
+                Write your nessage to us here:<br />
+                <textarea title="_" name="message" rows="10%" cols="60%"></textarea>
+            </p>
+            <input type="submit" value="send" />
+        </form>
+    </div>
     <!-- Include Bootstrap JavaScript (CDN) and jQuery (required for Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

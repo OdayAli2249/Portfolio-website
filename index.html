@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Our Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-Q7fo3B2NCu9z9l5Fv3N1wvBf5I+TzRt0DBg5W8thzBMwlbhk7ZJ3biD7Kp2PcBPUH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 
     <style>
         .navbar {
@@ -29,7 +30,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">My Website</a>
+        <a class="navbar-brand" href="#">Our Website</a>
 
         <!-- Toggle button for small screens -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -56,12 +57,47 @@
         </div>
     </nav>
 
-    Home
-
     <!-- code here -->
+    <div id="fst-div">
+        <h1>Hello</h1>
+        <h2 class="home-title">We are a team of engineers with different specializations studying for a Master's degree
+            in
+            <b><em>MCS</em></b> in <b><em>SVU</em></b>
+        </h2>
+    </div>
+    <div id="snd-div">
+        <div class="home-member-card">
+            <img class="img-home" src="/t.jfif" alt="photo is not available" />
+            <h2>Eng.Oday</h2>
+            <h4>IT engineer</h4>
+        </div>
+        <div class="divider"></div>
+        <div class="home-member-card">
+            <img class="img-home" src="/c.jfif" alt="photo is not available" />
+            <h2>Eng.Aya</h2>
+            <h4>Communications engineer</h4>
+        </div>
+        <div class="divider"></div>
+        <div class="home-member-card">
+            <img class="img-home" src="/m.jfif" alt="photo is not available" />
+            <h2>Eng.Badr</h2>
+            <h4>Mechanical engineer</h4>
+        </div>
+    </div>
+
+    <div id="thd-div">
+        لتتعرَّف علينا أكثر تصفَّح هذا الموقع بسهولة من خلال التنقُّل بين صفحاته بواسطة القائمة أعلاه
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#snd-div').animate({ opacity: 1 }, 500);
+            $('.divider').animate({ width: '0px' }, 500);
+        });
+    </script>
 
     <!-- Include Bootstrap JavaScript (CDN) and jQuery (required for Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

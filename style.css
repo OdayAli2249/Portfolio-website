@@ -1,0 +1,203 @@
+#fst-div {
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+#snd-div {
+    height: auto;
+    padding: 70px;
+    border: solid 1px #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+}
+
+#thd-div {
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.para {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    float: inline-start;
+}
+
+img {
+    width: 200px;
+}
+
+.name {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#frm {
+    /* text-align: center; */
+}
+
+#bdy {
+    /* background-image: url(/k.jfif); */
+
+}
+
+.contact-us-form {
+    /* margin: 20px; */
+}
+
+
+input {
+    width: 80%;
+}
+
+textarea {
+    width: 80%
+}
+
+.img-home {
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-container {
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 200px;
+}
+
+.card {
+    border: 3px solid #333;
+    padding: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-card {
+    border: 3px solid #333;
+    margin: 20px;
+    padding: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-member-card {
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 10px #c4c4c4;
+    float: inline-start;
+    cursor: pointer;
+}
+
+.home-title {
+    font-size: 20px;
+    margin: 0px;
+}
+
+
+#slider {
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    position: relative;
+}
+
+
+div#slider {
+    overflow: hidden;
+}
+
+div#slider figure div {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btn-next,
+.btn-prev {
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    color: #333;
+    background-color: white;
+    font-size: 30px;
+    border: 3px solid #333;
+    border-radius: 30px;
+}
+
+.btn-prev {
+    left: 0px;
+}
+
+.btn-next {
+    right: 0px;
+}
+
+.scroll-buttons {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+}
+
+.scroll-buttons a {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.scroll-buttons a:hover {
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+.divider{
+    width: 200px;
+}
+
+
+@media(max-width: 1100px) {
+    #snd-div {
+      flex-direction: column;
+    }
+  }
