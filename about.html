@@ -42,6 +42,44 @@
                     return false;
                 }
             });
+
+            var l = [0, 0, 0];
+
+            $('#oday-section').on('click', function () {
+                $('#oday-content').css('display', l[0] ? 'unset' : 'none')
+                if (l[0]) {
+                    $('#oday-icon').removeClass('fa fa-angle-down')
+                    $('#oday-icon').addClass('fa fa-angle-up')
+                } else {
+                    $('#oday-icon').removeClass('fa fa-angle-up')
+                    $('#oday-icon').addClass('fa fa-angle-down')
+                }
+                l[0] = !l[0];
+            });
+
+            $('#aya-section').on('click', function () {
+                $('#aya-content').css('display', l[1] ? 'unset' : 'none')
+                if (l[1]) {
+                    $('#aya-icon').removeClass('fa fa-angle-down')
+                    $('#aya-icon').addClass('fa fa-angle-up')
+                } else {
+                    $('#aya-icon').removeClass('fa fa-angle-up')
+                    $('#aya-icon').addClass('fa fa-angle-down')
+                }
+                l[1] = !l[1];
+            });
+
+            $('#badr-section').on('click', function () {
+                $('#badr-content').css('display', l[2] ? 'unset' : 'none')
+                if (l[2]) {
+                    $('#badr-icon').removeClass('fa fa-angle-down')
+                    $('#badr-icon').addClass('fa fa-angle-up')
+                } else {
+                    $('#badr-icon').removeClass('fa fa-angle-up')
+                    $('#badr-icon').addClass('fa fa-angle-down')
+                }
+                l[2] = !l[2];
+            });
         });
     </script>
 
@@ -84,8 +122,9 @@
     <div class="about-container">
         <div class="name" id="oday-section">
             <h2>Oday Ali</h2>
+            <i class="fa fa-angle-up about-icon" id="oday-icon"></i>
         </div>
-        <div>
+        <div id='oday-content'>
             <h4>I have bachelor in IT Engineering and specialization in <b> Artificial Intelligence Engineering</b> from
                 Damascus University.
                 <br />I work as a hybrid mobile application Developer & frontend Developer, I have Software-Development
@@ -110,11 +149,12 @@
                 <li>Postgres</li>
             </ul>
         </div>
-
+        <div style="height:10px;"></div>
         <div class="name" id="aya-section">
             <h2>Aya Hammora</h2>
+            <i class="fa fa-angle-up about-icon" id="aya-icon"></i>
         </div>
-        <div>
+        <div id='aya-content'>
             <h4>I have bachelor in Electrical Engineering, <b>Electronics & Communications Department</b> from Damascus
                 university.
             </h4>
@@ -140,11 +180,12 @@
                 <li>Programming with C++ & Python</li>
             </ul>
         </div>
-
+        <div style="height:10px;"></div>
         <div class="name" id="badr-section">
             <h2>Badr stephan</h2>
+            <i class="fa fa-angle-up about-icon" id="badr-icon"></i>
         </div>
-        <div>
+        <div id='badr-content'>
             <h5>I have Master of Business Administration (M.B.A)/SVU,
                 Diploma in Mechanical Engineering-Solar Energy and Bachelor in Mechanical Engineering/Tishreen
                 University.</h5>
